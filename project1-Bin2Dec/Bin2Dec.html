@@ -40,8 +40,14 @@
   </div>
   <h1>This is the Page for my Bin2Dec Project.</h1>
 
-
-    <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+    var dec =0;
+    var bin = prompt("Enter zeros and ones")
+    for(var i=0; i < bin.length; i++){
+      dec = dec + parseInt(bin[i]) * Math.pow(2,bin.length -1 -i);
+      }
+    alert(dec)
+  </script>
 
 </body>
 </html>
