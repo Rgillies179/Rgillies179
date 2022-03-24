@@ -2,7 +2,8 @@
 
 <html lang="en">
 <head>
-  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,15 +28,13 @@
 <body>
   <!-- This is used to make the header, active means that is the page you are on and gives that feed back to the user. -->
   <!--Navigation bar-->
-    <div id="navbar">
-
-    </div>
-
-    <script>
-    $(function(){
-      $("#navbar").load("nav.html");
-    });
-    </script>
+  <div id="nav-placeholder"></div>
+  <script>
+      $.get("navigation.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+  </script> 
+  
     <!--end of Navigation bar-->
   <h1>This is the main page for my projects. The focus for these projects is the functionality.</h1>
   <div class="container">
