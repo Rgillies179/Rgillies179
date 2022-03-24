@@ -2,7 +2,8 @@
 
 <html lang="en">
 <head>
-
+  <script src="jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,19 +27,17 @@
 
 <body>
   <!-- This is used to make the header, active means that is the page you are on and gives that feed back to the user. -->
-  <div class="navbar">
-    <a href="C:\Users\Robbie\Rgillies179\index\index.html">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Projects 1 - 10
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="C:\Users\Robbie\Rgillies179\project1-Bin2Dec\Bin2Dec.html">Project 1 - Bin2Dec</a>
-        <a href="C:\Users\Robbie\Rgillies179\project2-ColorCycle\ColorCycle.html">Project 2 - Color Cycle</a>
-        <a href="C:\Users\Robbie\Rgillies179\project3-CountDownTimer\CountDownTimer.html">Project 3 - Count Down Timer</a>
-      </div>
+  <!--Navigation bar-->
+    <div id="navbar">
+
     </div>
-  </div>
+
+    <script>
+    $(function(){
+      $("#navbar").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
   <h1>This is the main page for my projects. The focus for these projects is the functionality.</h1>
   <div class="container">
     <button onclick="document.location='https://donate.redcross.org.uk/appeal/ukraine-crisis-appeal'" class="button bounce">DONATE</button>
