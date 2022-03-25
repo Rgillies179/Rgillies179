@@ -18,6 +18,7 @@
   .dropdown {
     float: left;
     overflow: hidden;
+    background-color: #333;
   }
   
   /* Dropdown button */
@@ -33,7 +34,7 @@
   }
   
   /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  #nav-placeholder, .dropdown:hover .dropbtn {
     background-color: red;
   }
   
@@ -101,7 +102,7 @@
   justify-content: center;
   flex-direction: column;
 }
-.button {
+.button{
   font-family:"Open Sans", sans-serif;
   background-color:white;
   width:20%;
