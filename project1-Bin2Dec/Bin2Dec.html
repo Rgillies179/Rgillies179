@@ -24,16 +24,13 @@
 </head>
 
 <body>
-  <!-- This is used to make the header, active means that is the page you are on and gives that feed back to the user. -->
-  <div id="navbar">
-
-  </div>
-
+  <!--Navigation bar-->
+  <div id="nav-placeholder"></div>
   <script>
-    $(function(){
-      $("#navbar").load("Index\nav.html");
-    });
-  </script>
+      $.get("navigation.html", function(data){
+          $("#nav-placeholder").replaceWith(data);
+      });
+  </script> 
   <h1>This is the Page for my Bin2Dec Project.</h1>
 
     <script type="text/javascript">
