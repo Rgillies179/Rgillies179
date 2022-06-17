@@ -24,9 +24,17 @@
       $.get("../navigation.html", function(data){
           $("#nav-placeholder").replaceWith(data);
       });
+      
   </script> 
     <!--end of Navigation bar-->
   <h1>This is the Page for my Bin2Dec Project.</h1>
+
+  <script>
+    function refreshPage(){
+    window.location.reload();
+    } 
+    <button type="submit" onClick="refreshPage()">Convert again</button>
+  </script>
     <script type="text/javascript">
     var dec =0;
     var bin = prompt("Enter one's and zeros to convert from Binary to Decimal")
@@ -35,10 +43,7 @@
       }
     alert(dec)
 
-    function refreshPage(){
-    window.location.reload();
-    } 
-    <button type="submit" onClick="refreshPage()">Convert again</button>
+    
   </script>
 
 </body>
