@@ -27,7 +27,6 @@
   </script> 
     <!--end of Navigation bar-->
   <h1>This is the Page for my Bin2Dec Project.</h1>
-
     <script type="text/javascript">
     var dec =0;
     var bin = prompt("Enter one's and zeros to convert from Binary to Decimal")
@@ -35,6 +34,11 @@
       dec = dec + parseInt(bin[i]) * Math.pow(2,bin.length -1 -i);
       }
     alert(dec)
+
+    function refreshPage(){
+    window.location.reload();
+    } 
+    <button type="submit" onClick="refreshPage()">Convert again</button>
   </script>
 
 </body>
