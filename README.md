@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Rgillies179
 - 👀 I’m interested in learning how to code 
-- 🌱 I’m currently learning javascript
+- 🌱 I’m currently learning javascript/PHP
 - 📫 How to reach me rgillies179@gmail.com
 
 <!---
