@@ -134,14 +134,14 @@ body {
       font-size: 16px;
       border: none;
       outline: none;
-      color: rgb(255, 168, 6);
+      color: rgb(255, 255, 255);
       padding: 14px 16px;
       background-color: inherit;
       font-family: inherit; /* Important for vertical align on mobile phones */
       margin: 0; /* Important for vertical align on mobile phones */
     }
     
-    /* Add a red background color to navbar links on hover */
+    /* Add a gray background color to navbar links on hover */
    .dropdown:hover .dropbtn {
       background-color: rgb(156, 156, 156);
     }
@@ -150,7 +150,7 @@ body {
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: #ff00aa;
+      background-color: #000000;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
@@ -186,4 +186,9 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
+    /* Show the dropdown menu on hover */
+    .color-dropdown:hover .color-dropdown-content {
+      display: block;
+    }
   
