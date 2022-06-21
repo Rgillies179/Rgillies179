@@ -87,7 +87,7 @@ body {
     margin: 0; /* Important for vertical align on mobile phones */
   }
   
-  /* Add a red background color to navbar links on hover */
+  /* Add a green background color to navbar links on hover */
  .dropdown:hover .dropbtn {
     background-color: rgb(145, 241, 136);
   }
