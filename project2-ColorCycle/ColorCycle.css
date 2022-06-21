@@ -168,7 +168,7 @@ body {
     
     /* Add a grey background color to dropdown links on hover */
     .dropdown-content a:hover {
-      background-color: rgb(255, 0, 0);
+      background-color: rgb(41, 41, 41);
     }
     
     /* Show the dropdown menu on hover */
