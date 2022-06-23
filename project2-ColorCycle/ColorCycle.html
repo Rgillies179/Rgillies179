@@ -32,19 +32,59 @@
 
     <!-- will be at random? or go from dark red to light then dark again? -->
 
-    <h1>This Text will cycle through what ever color you choose.</h1>
-    <div class="color-dropdown">
+    <ul id="Color-changer" >
+      <li class="cycle-color-text"><h1>This Text will cycle through colors</h1></li>
+        </ul>
+
+
+    <!-- <div class="color-dropdown">
+      <ul id="menu-main-nav" >
+        <li class="contact"><a href="#">Contact</a></li>
+    </ul>
+    
       <button class="color-dropbtn">Choose a color to cycle through</button>
           <div class="color-dropdown-content">
             <button class="dropbtn-color-choice">Red</button>
             <button class="dropbtn-color-choice">Green</button>
             <button class="dropbtn-color-choice">Blue</button>
           </div>
-        </div>
+        </div> -->
     <script src="js/scripts.js">
 
+        jQuery.noConflict();
 
-    </script>
+          (function($) {
+            $(function() {
+
+              var currentColor = 0;
+              var myWebColors = [ '#49aea2', '#5da270', '#a1b144', '#ceb33d', '#ce812d', '#c44e4e', '#ac4275', '#705f91', '#4d6791', '#5199a4' ];
+
+              window.setInterval( animateColor, 200 );
+
+              function animateColor() {
+
+                      $("ul#Color-changer li a:active,  li.cycle-color-text ").animate(
+                      {
+                          Color: myWebColors[currentColor]
+                      }, "slow");
+                      
+                $("ul#Color-changer li.cycle-color-text").animate(
+                  {
+                    color: myWebColors[currentColor]
+                  }, "slow");
+
+                if (currentColor == 9) {
+                  currentColor = 0;
+                } else {
+                  currentColor++;
+                }
+              }
+
+            });
+
+          })(jQuery);
+      
+      </script>
 
 </body>
 </html>
