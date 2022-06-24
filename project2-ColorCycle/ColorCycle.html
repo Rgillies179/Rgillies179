@@ -20,12 +20,15 @@
 <body>
   <!--Navigation bar-->
   <div id="nav-placeholder"></div>
+  
   <script>
+    //Takes the code from navigation.html and run it here
       $.get("../navigation.html", function(data){
           $("#nav-placeholder").replaceWith(data);
       });
   </script> 
     <!--end of Navigation bar-->
+
   <h1>This is the Page for my ColorCycle Project.</h1>
     <!--there will be text on the page that will cycle through diffrenct colors that has a drop down menu of diffrent "main" colors that when you click this color it will cycle through colors of that type
     e.g. click red it will cycle thorugh all diffrent types of red from dark reds to bright reds.-->

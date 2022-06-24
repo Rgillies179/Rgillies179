@@ -20,12 +20,15 @@
 <body>
   <!--Navigation bar-->
   <div id="nav-placeholder"></div>
+
   <script>
+    //Takes the code from navigation.html and run it here
       $.get("../navigation.html", function(data){
           $("#nav-placeholder").replaceWith(data);
       });
   </script> 
     <!--end of Navigation bar-->
+
   <h1>This is the main page for my Count down timer Project.</h1>
 
   <!-- there will be a count down timer on the page that will start at a desanated time and count down to zero -->
