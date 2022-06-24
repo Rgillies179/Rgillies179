@@ -2,7 +2,7 @@
 
 <html lang="en">
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="jquery-3.6.0.min.js"></script> 
   
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,9 +32,11 @@
 
     <!-- will be at random? or go from dark red to light then dark again? -->
 
-    <ul id="Color-changer" >
-      <li class="cycle-color-text"><h1>This Text will cycle through colors</h1></li>
-        </ul>
+    <ul id="Color-changer">
+      <li class="cycle-color-text">
+        <h1>This Text will cycle through colors</h1>
+      </li>
+    </ul>
 
 
     <!-- <div class="color-dropdown">
@@ -49,40 +51,52 @@
             <button class="dropbtn-color-choice">Blue</button>
           </div>
         </div> -->
-        <script src="jquery-3.6.0.min.js">
+        <script>
 
-        jQuery.noConflict();
+            jQuery.noConflict();
 
-          (function($) {
-            $(function() {
+            (function ($) {
+              $(function () {
+                var currentColor = 0;
+                var myWebColors = [
+                  "#49aea2",
+                  "#5da270",
+                  "#a1b144",
+                  "#ceb33d",
+                  "#ce812d",
+                  "#c44e4e",
+                  "#ac4275",
+                  "#705f91",
+                  "#4d6791",
+                  "#5199a4"
+                ];
 
-              var currentColor = 0;
-              var myWebColors = [ '#49aea2', '#5da270', '#a1b144', '#ceb33d', '#ce812d', '#c44e4e', '#ac4275', '#705f91', '#4d6791', '#5199a4' ];
+                window.setInterval(animateColor, 200);
 
-              window.setInterval( animateColor, 200 );
+                function animateColor() {
+                  $("ul#Color-changer li a:active,  li.cycle-color-text ").animate(
+                    {
+                      Color: myWebColors[currentColor]
+                    },
+                    "slow"
+                  );
 
-              function animateColor() {
+                  $("ul#Color-changer li.cycle-color-text").animate(
+                    {
+                      color: myWebColors[currentColor]
+                    },
+                    "slow"
+                  );
 
-                      $("ul#Color-changer li a:active,  li.cycle-color-text ").animate(
-                      {
-                          Color: myWebColors[currentColor]
-                      }, "slow");
-                      
-                $("ul#Color-changer li.cycle-color-text").animate(
-                  {
-                    color: myWebColors[currentColor]
-                  }, "slow");
-
-                if (currentColor == 9) {
-                  currentColor = 0;
-                } else {
-                  currentColor++;
+                  if (currentColor == 9) {
+                    currentColor = 0;
+                  } else {
+                    currentColor++;
+                  }
                 }
-              }
+              });
+            })(jQuery);
 
-            });
-
-          })(jQuery);
       
       </script>
 
