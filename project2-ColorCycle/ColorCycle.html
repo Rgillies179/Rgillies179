@@ -13,7 +13,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    <link rel="stylesheet" href="CountDownTimer.css">
+    <link rel="stylesheet" href="ColorCycle.css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
@@ -54,51 +54,51 @@
             <button class="dropbtn-color-choice">Blue</button>
           </div>
         </div> -->
-        <script type="text/javascript">
+        <script src="js/scripts.js">
 
-            jQuery.noConflict();
+            // jQuery.noConflict();
 
-            (function ($) {
-              $(function () {
-                var currentColor = 0;
-                var myWebColors = [
-                  "#49aea2",
-                  "#5da270",
-                  "#a1b144",
-                  "#ceb33d",
-                  "#ce812d",
-                  "#c44e4e",
-                  "#ac4275",
-                  "#705f91",
-                  "#4d6791",
-                  "#5199a4"
-                ];
+            // (function (color) {
+            //   color(function () {
+            //     var currentColor = 0;
+            //     var myWebColors = [
+            //       "#49aea2",
+            //       "#5da270",
+            //       "#a1b144",
+            //       "#ceb33d",
+            //       "#ce812d",
+            //       "#c44e4e",
+            //       "#ac4275",
+            //       "#705f91",
+            //       "#4d6791",
+            //       "#5199a4"
+            //     ];
 
-                window.setInterval(animateColor, 200);
+            //     window.setInterval(animateColor, 200);
 
-                function animateColor() {
-                  $("ul#Color-changer li a:active,  li.cycle-color-text ").animate(
-                    {
-                      Color: myWebColors[currentColor]
-                    },
-                    "slow"
-                  );
+            //     function animateColor() {
+            //       color("ul#Color-changer li a:active,  li.cycle-color-text ").animate(
+            //         {
+            //           Color: myWebColors[currentColor]
+            //         },
+            //         "slow"
+            //       );
 
-                  $("ul#Color-changer li.cycle-color-text").animate(
-                    {
-                      color: myWebColors[currentColor]
-                    },
-                    "slow"
-                  );
+            //       color("ul#Color-changer li.cycle-color-text").animate(
+            //         {
+            //           color: myWebColors[currentColor]
+            //         },
+            //         "slow"
+            //       );
 
-                  if (currentColor == 9) {
-                    currentColor = 0;
-                  } else {
-                    currentColor++;
-                  }
-                }
-              });
-            })(jQuery);
+            //       if (currentColor == 9) {
+            //         currentColor = 0;
+            //       } else {
+            //         currentColor++;
+            //       }
+            //     }
+            //   });
+            // })(jQuery);
 
       
       </script>
