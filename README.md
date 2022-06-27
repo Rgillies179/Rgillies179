@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Rgillies179
-- 👀 I’m interested in learning how to code 
-- 🌱 I’m currently learning javascript/PHP
+- 👀 I’m interested in continuing learning how to code 
+- 🌱 I’m currently learning javascript/PHP/JQuery 
 - 📫 How to reach me rgillies179@gmail.com
 
 Go to https://rgillies179.github.io/Rgillies179/Index/Index.html to see my project i'm currently working on.
