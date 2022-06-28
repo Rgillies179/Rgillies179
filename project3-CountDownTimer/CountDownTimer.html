@@ -1,21 +1,22 @@
 <!doctype html>
 
 <html lang="en">
-  <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-    <title>Count Down Timer</title>
-  
-    <link rel="icon" href="/favicon.ico">
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
-    <link rel="stylesheet" href="CountDownTimer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Count Down Timer</title>
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="CountDownTimer.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <body>
   <!--Navigation bar-->
@@ -23,13 +24,15 @@
 
   <script>
     //Takes the code from navigation.html and run it here
-      $.get("../navigation.html", function(data){
-          $("#nav-placeholder").replaceWith(data);
-      });
-  </script> 
-    <!--end of Navigation bar-->
+    $.get("../navigation.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+  </script>
+  <!--end of Navigation bar-->
 
-  <h1>This is the main page for my Count down timer Project.</h1>
+  <body>
+    <div>Registration closes in <span id="time">05:00</span> minutes!</div>
+  </body>
 
   <!-- there will be a count down timer on the page that will start at a desanated time and count down to zero -->
 
@@ -38,11 +41,41 @@
   <!-- a way to display the time -->
 
   <!-- a way to store the time i am counting down from-->
-  
 
-    <script src="js/scripts.js">
 
-    </script>
+  <script src="js/scripts.js">
+
+    function startTimer(duration, display) {
+
+      var timer = duration, minutes, seconds;
+
+      setInterval(function () {
+
+        minutes = parseInt(timer / 60, 10);
+
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+          
+          timer = duration;
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+      startTimer(fiveMinutes, display);
+    };
+
+  </script>
 
 </body>
+
 </html>
