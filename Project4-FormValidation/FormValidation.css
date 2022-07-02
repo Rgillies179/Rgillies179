@@ -191,4 +191,130 @@ body {
       .color-dropdown:hover .color-dropdown-content {
         display: block;
       }
+
+
+
+          /* The dropdown container */
+    .dropdownM {
+        float: left;
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      /* Dropdown button */
+      .dropdownM .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+        margin: 0; /* Important for vertical align on mobile phones */
+      }
+      
+      /* Add a red background color to navbar links on hover */
+     .dropdownM:hover .dropbtn {
+        background-color: rgb(145, 241, 136);
+      }
+      
+      /* Dropdown content (hidden by default) */
+      .dropdownM-content {
+        display: none;
+        position: absolute;
+        background-color: #000000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdownM-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      /* Add a green background color to dropdown links on hover */
+      .dropdownM-content a:hover {
+        background-color: rgb(145, 241, 136);
+      }
+      
+      /* Show the dropdown menu on hover */
+      .dropdownM:hover .dropdown-content {
+        display: block;
+      }
+    
+        /* The dropdown container */
+        .dropdownM {
+          float: left;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        /* Dropdown button */
+        .dropdownM .dropbtnM {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: rgb(255, 255, 255);
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit; /* Important for vertical align on mobile phones */
+          margin: 0; /* Important for vertical align on mobile phones */
+        }
+        
+        /* Add a gray background color to navbar links on hover */
+       .dropdownM:hover .dropbtnM {
+          background-color: rgb(156, 156, 156);
+        }
+        
+        /* Dropdown content (hidden by default) */
+        .dropdownM-content {
+          display: none;
+          position: absolute;
+          background-color: #000000;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        /* Links inside the dropdown */
+        .dropdownM-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        /* Add a grey background color to dropdown links on hover */
+        .dropdownM-content a:hover {
+          background-color: rgb(41, 41, 41);
+        }
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+    
+    
+      /* Dropdown color content (hidden by default) */
+      .color-dropdownM-content {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+    
+        /* Show the dropdown menu on hover */
+        .color-dropdownM:hover .color-dropdownM-content {
+          display: block;
+        }
     
