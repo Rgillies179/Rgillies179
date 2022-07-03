@@ -33,7 +33,9 @@
   <!--end of Navigation bar-->
   <h1>This is the Page for my Form Valadation Project and the Start to the medium projects</h1>
 
-  <div id="form-padding">
+  <div id="form-container">
+
+    <div id="form-input">
   <form>
 
     <label for="fname">First name:</label><br>
@@ -47,8 +49,9 @@
 
     <input type="button" value="Submit"onclick="showInput();displayLabels();">
   </form> 
-  
+</div>
 
+  <div id="form-output">
   <label>Your input: </label>
   <p><label id ="input-Labelf">First Name: </label><span id='displayfname'></span></p>
   <label id ="input-Labell">Last Name: </label><span id='displaylname'></span>
@@ -72,6 +75,7 @@
     }
 
   </script>
+  </div>
 </div>
 </body>
 
