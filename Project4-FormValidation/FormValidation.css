@@ -16,7 +16,8 @@ body {
   }
   
   #form-output {
-    display : inline-block
+    margin:20px;
+    display:inline-block;
   }
 
   #input-Labelf{
