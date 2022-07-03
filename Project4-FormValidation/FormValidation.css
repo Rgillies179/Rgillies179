@@ -7,7 +7,15 @@ body {
     margin:20px;
   }
 
-  #input-Label{
+  #input-Labelf{
+    display:none;
+  }
+
+  #input-Labell{
+    display:none;
+  }
+
+  #input-Labela{
     display:none;
   }
   

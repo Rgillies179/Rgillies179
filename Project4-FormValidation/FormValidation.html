@@ -50,9 +50,9 @@
   
 
   <label>Your input: </label>
-  <label id ="input-Label">First Name: </label><p><span id='displayfname'></span></p>
-  <label id ="input-Label">Last Name: </label><p><span id='displaylname'></span></p>
-  <label id ="input-Label">Age: </label><p><span id='displayage'></span></p>
+  <label id ="input-Labelf">First Name: </label><span id='displayfname'></span></p>
+  <label id ="input-Labell">Last Name: </label><span id='displaylname'></span></p>
+  <label id ="input-Labela">Age: </label><span id='displayage'></span></p>
 </div>
   <script>
 
@@ -65,6 +65,10 @@
     function displayLabels() {
     var p = document.getElementById("input-Label");
     p.style.display = "block";  	 
+    var p = document.getElementById("input-Labell");
+    p.style.display = "block";  	
+    var p = document.getElementById("input-Labela");
+    p.style.display = "block";  	
     }
 
   </script>
