@@ -12,11 +12,11 @@ body {
   }
 
   #form-input {
-    float:left
+    float:left;
   }
   
   #form-output {
-    float:left
+    display : inline-block
   }
 
   #input-Labelf{
