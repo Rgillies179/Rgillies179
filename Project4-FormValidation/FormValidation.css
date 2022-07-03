@@ -31,6 +31,10 @@ body {
   #input-Labela{
     display:none;
   }
+
+  #input-Label{
+    display:none;
+  }
   
   /* End of Form style */
 
