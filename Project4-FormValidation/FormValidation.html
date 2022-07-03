@@ -42,13 +42,24 @@
     <input type="text" id="lname" name="lname" value=""><br><br>
 
     <label for="lname">Age:</label><br>
-    <input type="text" id="lname" name="lname" value=""><br><br>
+    <input type="text" id="age" name="lname" value=""><br><br>
 
     <input type="submit" value="Submit">
   </form> 
-  
+
+  <label>Your input: </label>
+  <p><span id='displayfname'></span></p>
+  <p><span id='displaylname'></span></p>
+  <p><span id='displayage'></span></p>
+
   <script>
- 
+
+    function showInput() {
+        document.getElementById('displayfname').innerHTML = document.getElementById("fname").value;
+        document.getElementById('displaylname').innerHTML = document.getElementById("lname").value;
+        document.getElementById('displayage').innerHTML = document.getElementById("age").value;
+    }
+
   </script>
 
 </body>
