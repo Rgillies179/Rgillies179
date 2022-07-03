@@ -6,6 +6,10 @@ body {
   #form-padding {
     margin:20px;
   }
+
+  #input-Label{
+    display:none;
+  }
   
   .topnav {
     overflow: hidden;

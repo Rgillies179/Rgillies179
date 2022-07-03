@@ -45,14 +45,14 @@
     <label for="lname">Age:</label><br>
     <input type="text" id="age" name="lname" value=""><br><br>
 
-    <input type="button" value="Submit"onclick="showInput();">
+    <input type="button" value="Submit"onclick="showInput();displayLabels();">
   </form> 
   
 
   <label>Your input: </label>
-  <label>First Name: </label><p><span id='displayfname'></span></p>
-  <label>Last Name: </label><p><span id='displaylname'></span></p>
-  <label>Age: </label><p><span id='displayage'></span></p>
+  <label id ="input-Label">First Name: </label><p><span id='displayfname'></span></p>
+  <label id ="input-Label">Last Name: </label><p><span id='displaylname'></span></p>
+  <label id ="input-Label">Age: </label><p><span id='displayage'></span></p>
 </div>
   <script>
 
@@ -60,6 +60,11 @@
         document.getElementById('displayfname').innerHTML = document.getElementById("fname").value;
         document.getElementById('displaylname').innerHTML = document.getElementById("lname").value;
         document.getElementById('displayage').innerHTML = document.getElementById("age").value;
+    }
+
+    function displayLabels() {
+    var p = document.getElementById("input-Label");
+    p.style.display = "block";  	 
     }
 
   </script>
