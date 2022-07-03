@@ -60,12 +60,14 @@
   <script>
 
     function showInput() {
+      //collects and displays what ever the user puts into the form
         document.getElementById('displayfname').innerHTML = document.getElementById("fname").value;
         document.getElementById('displaylname').innerHTML = document.getElementById("lname").value;
         document.getElementById('displayage').innerHTML = document.getElementById("age").value;
     }
 
     function displayLabels() {
+      //on click of submit this will display all the hidden labels for the user
     var f = document.getElementById("input-Labelf");
     f.style.display = "block";  	 
     var l = document.getElementById("input-Labell");
