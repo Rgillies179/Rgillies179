@@ -21,7 +21,20 @@
 <body>
   <!--Navigation bar -->
   <div id="nav-placeholder"></div>
+  <form>
 
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+
+    <label for="lname">Age:</label><br>
+    <input type="text" id="lname" name="lname" value=""><br><br>
+
+    <input type="submit" value="Submit">
+  </form> 
+  
   <script>
     //Takes the code from navigation.html and run it here
     $.get("../navigation.html", function (data) {
