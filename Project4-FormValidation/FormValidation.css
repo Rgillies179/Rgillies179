@@ -318,7 +318,8 @@ body {
           display: block;
         }
 
-        form {
+        input {
+          width: 250px;
           padding:20px;
         }
     
