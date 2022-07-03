@@ -317,4 +317,8 @@ body {
         .color-dropdownM:hover .color-dropdownM-content {
           display: block;
         }
+
+        form {
+          padding:20px;
+        }
     
