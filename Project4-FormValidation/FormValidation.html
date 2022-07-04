@@ -77,10 +77,15 @@
 
       //valadation for age 
       let c = document.forms["FormValidation"]["age"].value;
-      if (c == "" || c != isNaN()) {
+      if (c == "" ) {
         alert("Age must be filled out");
         return false;
       }
+      if (c == isNaN()) {
+        alert("Input has to be a number");
+        return false;
+      }
+      
     }
     
     function showInput() {
