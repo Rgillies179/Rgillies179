@@ -75,14 +75,15 @@
         return false;
       }
 
-      //valadation for age 
+      //valadation for age (text)
       let c = document.forms["FormValidation"]["age"].value;
       if (c == "" ) {
         alert("Age must be filled out");
         return false;
       }
-      ;
-      if (c == isNumber(c)) {
+
+      //valadation for age (number)
+      if (isNaN(c)) {
         alert("Input has to be a number");
         return false;
       }
