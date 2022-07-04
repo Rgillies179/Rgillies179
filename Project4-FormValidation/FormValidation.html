@@ -36,7 +36,7 @@
   <div id="form-container">
 
     <div id="form-input">
-  <form>
+  <form name="FormValidation">
 
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname" value=""><br><br>
@@ -60,7 +60,7 @@
   <script>
     function validateForm() {
       //valadates the form so that the fields cant be empty 
-      let x = document.forms["displayfname"]["fname"].value;
+      let x = document.forms["FormValidation"]["fname"].value;
       if (x == "") {
         alert("Name must be filled out");
         return false;
@@ -76,13 +76,13 @@
 
     function displayLabels() {
       //on click of submit this will display all the hidden labels for the user
-      var f = document.getElementById("input-Labelf");
+      let f = document.getElementById("input-Labelf");
       f.style.display = "block";  	 
-      var l = document.getElementById("input-Labell");
+      let l = document.getElementById("input-Labell");
       l.style.display = "block";  	
-      var a = document.getElementById("input-Labela");
+      let a = document.getElementById("input-Labela");
       a.style.display = "block";  	
-      var ml = document.getElementById("input-Label");
+      let ml = document.getElementById("input-Label");
       ml.style.display = "block";  	
     }
     
