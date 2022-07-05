@@ -37,6 +37,7 @@
 
     <div id="form-input">
   <form name="FormValidation">
+
     <!-- all the fields for the form -->
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname" value=""><br><br>
@@ -50,68 +51,70 @@
     <input type="button" value="Submit"onclick="showInput();displayLabels();validateForm();">
   </form> 
 </div>
-  <!-- labeling for the out of the form -->
+
+  <!-- labeling for the output of the form -->
   <div id="form-output">
-  <label id ="input-Label">Your input: </label>
-  <p><label id ="input-Labelf">First Name: </label><span id='displayfname'></span></p>
-  <label id ="input-Labell">Last Name: </label><span id='displaylname'></span>
-  <p><label id ="input-Labela">Age: </label><span id='displayage'></span></p>
 
-  <script>
-    function validateForm() {
-      //valadates the form so that the fields cant be empty 
+    <label id ="input-Label">Your input: </label>
+    <p><label id ="input-Labelf">First Name: </label><span id='displayfname'></span></p>
+    <label id ="input-Labell">Last Name: </label><span id='displaylname'></span>
+    <p><label id ="input-Labela">Age: </label><span id='displayage'></span></p>
 
-      //valadation for first name
-      let x = document.forms["FormValidation"]["fname"].value;
-      if (x == "") {
-        alert("First Name must be filled out");
-        return false;
-      }
+    <script>
+      function validateForm() {
+        //valadates the form so that the fields cant be empty 
 
-      //valadation for last name
-      let b = document.forms["FormValidation"]["lname"].value;
-      if  (b == "") {
-        alert("Last Name must be filled out");
-        return false;
-      }
+        //valadation for first name
+        let x = document.forms["FormValidation"]["fname"].value;
+        if (x == "") {
+          alert("First Name must be filled out");
+          return false;
+        }
 
-      //valadation for age (text)
-      let c = document.forms["FormValidation"]["age"].value;
-      if (c == "" ) {
-        alert("Age must be filled out");
-        return false;
-      }
+        //valadation for last name
+        let b = document.forms["FormValidation"]["lname"].value;
+        if  (b == "") {
+          alert("Last Name must be filled out");
+          return false;
+        }
 
-      //valadation for age (number)
-      if (isNaN(c)) {
-        alert("Input has to be a number");
-        return false;
+        //valadation for age (text)
+        let c = document.forms["FormValidation"]["age"].value;
+        if (c == "" ) {
+          alert("Age must be filled out");
+          return false;
+        }
+
+        //valadation for age (number)
+        if (isNaN(c)) {
+          alert("Input has to be a number");
+          return false;
+        }
+        
       }
       
-    }
-    
-    function showInput() {
-      //collects and displays what ever the user puts into the form
-        document.getElementById('displayfname').innerHTML = document.getElementById("fname").value;
-        document.getElementById('displaylname').innerHTML = document.getElementById("lname").value;
-        document.getElementById('displayage').innerHTML = document.getElementById("age").value;
-    }
+      function showInput() {
+        //collects and displays what ever the user puts into the form
+          document.getElementById('displayfname').innerHTML = document.getElementById("fname").value;
+          document.getElementById('displaylname').innerHTML = document.getElementById("lname").value;
+          document.getElementById('displayage').innerHTML = document.getElementById("age").value;
+      }
 
-    function displayLabels() {
-      //on click of submit this will display all the hidden labels for the user
-      let f = document.getElementById("input-Labelf");
-      f.style.display = "block";  	 
-      let l = document.getElementById("input-Labell");
-      l.style.display = "block";  	
-      let a = document.getElementById("input-Labela");
-      a.style.display = "block";  	
-      let ml = document.getElementById("input-Label");
-      ml.style.display = "block";  	
-    }
-    
+      function displayLabels() {
+        //on click of submit this will display all the hidden labels for the user
+        let f = document.getElementById("input-Labelf");
+        f.style.display = "block";  	 
+        let l = document.getElementById("input-Labell");
+        l.style.display = "block";  	
+        let a = document.getElementById("input-Labela");
+        a.style.display = "block";  	
+        let ml = document.getElementById("input-Label");
+        ml.style.display = "block";  	
+      }
+      
 
 
-  </script>
+    </script>
   </div>
 </div>
 </body>
