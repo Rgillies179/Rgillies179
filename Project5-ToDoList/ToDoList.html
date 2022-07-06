@@ -57,15 +57,13 @@
       var addBtn = document.getElementById("inputButton");
       var taskList = document.getElementById("tasks");
       var errorMsg = docutment.getElementById("errorText");
-      console.log(taskInput);
-      console.logaddBtn
-      console.log(taskList);
-      console.log(errorMsg);
+      console.log("test")
     }
 
     function errorCheck(){
-      if (taskInput == ""){
-        
+      if (taskInput.value == ""){
+        let errorText = document.getElementById("errorText");
+        errorText.style.display = "block";  	
       }
     }
   </script>
