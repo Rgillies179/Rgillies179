@@ -50,6 +50,7 @@
   <script>
     function TaskStart(){
       cacheInfo();
+      errorCheck();
     }
 
     function cacheInfo() {
@@ -57,12 +58,6 @@
       var addBtn = document.getElementById("inputButton");
       var taskList = document.getElementById("tasks");
       var errorMsg = document.getElementById("errorText");
-      console.log("1. taskInput");
-      console.log("2. taskInput.value");
-      console.log("3. ", taskInput);
-      console.log("4. ", taskInput.value);
-      console.log("5. test");
-      console.log("6. Hello world!");
     }
 
     function errorCheck(){
