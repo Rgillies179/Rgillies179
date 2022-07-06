@@ -49,7 +49,7 @@
 
   <script>
     function TaskStart(){
-      cacheInfo()
+      cacheInfo();
     }
 
     function cacheInfo() {
@@ -57,16 +57,19 @@
       var addBtn = document.getElementById("inputButton");
       var taskList = document.getElementById("tasks");
       var errorMsg = docutment.getElementById("errorText");
-      console.log("test")
+      console.log("1. taskInput");
+      console.log("2. taskInput.value");
+      console.log("3. ", taskInput);
+      console.log("4. ", taskInput.value);
+      console.log("5. test");
+      console.log("6. Hello world!");
     }
 
     function errorCheck(){
       if (taskInput.value == ""){
-        let errorText = document.getElementById("errorText");
-        errorText.style.display = "block";  	
+        errorMsg.style.display = "block";  	
       } else {
-        let errorText = document.getElementById("errorText");
-        errorText.style.display = "none"; 
+        errorMsg.style.display = "none"; 
       }
     }
   </script>
