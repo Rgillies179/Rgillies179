@@ -50,25 +50,18 @@
   </div>
 
   <script>
-    function TaskStart(){
-      cacheInfo();
-      errorCheck();
-    }
+    
+    (function() {
 
-    function cacheInfo() {
-      var taskInput = document.getElementById("taskInput");
-      var addBtn = document.getElementById("inputButton");
-      var taskList = document.getElementById("tasks");
-      var errorMsg = document.getElementById("errorText");
-    }
+      var taskList = {
 
-    function errorCheck(){
-      if (taskInput.value == ""){
-        errorText.style.display = "block";  	
-      } else {
-        errorText.style.display = "none"; 
+        init: function() {
+          
+        }
       }
-    }
+
+    });
+
   </script>
 
 </body>
