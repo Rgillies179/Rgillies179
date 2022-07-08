@@ -89,7 +89,19 @@
       }
     },
     
-    
+    getAllTasks: function(){
+      var list = document.getElementById("list");
+      list.innerHTML = "";
+
+      for(var i = 0; i < taskList.data.length; i++) {
+        var task = document.createElement("li");
+        task.className = "task";
+        task.setAttribute("data-id", i);
+        task.innerHTML = '<div class="delete">x</div class="text"> #' + (i + 1) + ": " + taskList.data[i] + "</div>";
+        
+      }
+
+    }
   }}
   );
 
