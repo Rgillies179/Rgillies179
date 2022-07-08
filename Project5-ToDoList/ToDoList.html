@@ -61,6 +61,16 @@
         }
       }
 
+      document.onKeyDown = function (e) {
+        if(e.which == 13) {
+          taskList.createNewTask();
+        }
+      }
+
+      document.addEventListener("mousemove", taskList.moveTask)
+
+      taskList.getAllTasks();
+
     });
 
   </script>
