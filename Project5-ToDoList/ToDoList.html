@@ -54,13 +54,13 @@
     (function() {
 
       var taskList = {
-
+        //insates the function
         init: function() {
           var inputButton = document.getElementById("inputButton");
           button.addEventListener("Click", taskList.createNewTask )
         
       
-
+          //allows you to submit a new task with enter
       document.onKeyDown = function (e) {
         if(e.which == 13) {
           taskList.createNewTask();
@@ -78,7 +78,7 @@
     moving: false,
 
     element: '',
-
+    //creates a new task when you click enter/submit
     createNewTask:function() {
       var input = document.getElementById("newTask");
       if(input.value !== "") {
@@ -98,8 +98,10 @@
         task.className = "task";
         task.setAttribute("data-id", i);
         task.innerHTML = '<div class="delete">x</div class="text"> #' + (i + 1) + ": " + taskList.data[i] + "</div>";
-        
+
       }
+
+      
 
     }
   }}
