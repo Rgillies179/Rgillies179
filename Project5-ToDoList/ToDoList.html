@@ -58,8 +58,8 @@
         init: function() {
           var inputButton = document.getElementById("inputButton");
           button.addEventListener("Click", taskList.createNewTask )
-        }
-      }
+        
+      
 
       document.onKeyDown = function (e) {
         if(e.which == 13) {
@@ -71,7 +71,27 @@
 
       taskList.getAllTasks();
 
-    });
+    },
+    
+    data: ["go to shop", "write code", "exercise"],
+
+    moving: false,
+
+    element: '',
+
+    createNewTask:function() {
+      var input = document.getElementById("newTask");
+      if(input.value !== "") {
+        taskList.data.push(input.value);
+        input.value = "";
+
+        taskList.getAllTasks();
+      }
+    },
+    
+    
+  }}
+  );
 
   </script>
 
