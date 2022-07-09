@@ -99,6 +99,8 @@
         task.setAttribute("data-id", i);
         task.innerHTML = '<div class="delete">x</div class="text"> #' + (i + 1) + ": " + taskList.data[i] + "</div>";
 
+        task.children[0].addEventListener("click", taskList.deleteTask);
+
       }
 
       
