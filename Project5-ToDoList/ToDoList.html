@@ -100,7 +100,12 @@
         task.innerHTML = '<div class="delete">x</div class="text"> #' + (i + 1) + ": " + taskList.data[i] + "</div>";
 
         task.children[0].addEventListener("click", taskList.deleteTask);
+        task.children[1].addEventListener("mousedown", function(e) { 
+					e.target.parentNode.className += " moving"; 
 
+					taskList.moving = true;
+					taskList.element = e.target.parentNode;
+				});
       }
 
       
