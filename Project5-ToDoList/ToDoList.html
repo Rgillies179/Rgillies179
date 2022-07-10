@@ -80,10 +80,10 @@
     element: '',
     //creates a new task when you click enter/submit
     createNewTask:function() {
-      var input = document.getElementById("newTask");
-      if(input.value !== "") {
+      var input = document.getElementById('new-Task');
+      if(input.value !== '') {
         taskList.data.push(input.value);
-        input.value = "";
+        input.value = '';
 
         taskList.getAllTasks();
       }
