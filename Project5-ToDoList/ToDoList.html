@@ -105,14 +105,57 @@
 
 					taskList.moving = true;
 					taskList.element = e.target.parentNode;
+          
+          
 				});
+
+        task.children[1].addEventListener("mouseup", function(e) {
+					e.target.parentNode.className = "task";
+
+          taskList.moving = false;
+          taskList.adjustTaskOrder(e);
+        });
+
+        list.appendChild(task);
+      }
+    },
+
+    moveTask:function(e) {
+      if(taskList.moving == true){
+        var task = taskList.element;
+
+        task.style.position = "fixed"
+        task.style.top = e.clientY -15 + "px";
+      }
+    },
+
+    adjustTaskOrder: function(e){
+      var task = e.target.parentNode;
+      var displayedTasks = taskList.utility.getElementByAttribute("data-id");
+      var id = parseInt(Task.getAttribute("data-id"));
+
+      var contents = task.children[1].innerHTML;
+      contents = contents.substr(5);
+
+      for(var i = 0; i < displayedTasks.length; i++) {
+        if(task.offsetTop < displayedTasks[i].offsetTop) {
+          taskList.data.splice(id, 1);
+          app.data.splice(i, 0, contents);
+
+          break;
+        }
       }
 
-      
+      if(task.offsetTop > displayedTasks[(displayedTasks.length - 1)].offsetTop) {
+        taskList.data.splice(id, 1);
+        taskList.data.push(contents);
+      }
 
-    }
-  }}
-  );
+      taskList.getAllTasks();
+    },
+
+
+  }};
 
   </script>
 
