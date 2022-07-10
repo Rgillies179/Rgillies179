@@ -154,8 +154,33 @@
       taskList.getAllTasks();
     },
 
+    deleteTask: function(e) {
+      var task = e.target.parentNode;
+      var id = parseInt(task.getAttribute("data-id"));
 
-  }};
+      taskList.data.splice(id, 1);
+
+      taskList.getAllTasks();
+    },
+
+    utility: {
+      getElementByAttribute: function(attribute) {
+        var everthing = document.getElementsByTagName("*");
+        var matchingElements = [];
+
+        for(var i = 0; i < everything.length; i++) {
+          if(everything[i].getAttribute(attribute)) {
+            matchingElements.push(everytthing[i]);
+          }
+        }
+        return matchingElements;
+      }
+    }
+  }
+
+  taskList.init();
+
+})();
 
   </script>
 
