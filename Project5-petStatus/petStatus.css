@@ -125,12 +125,7 @@ body {
 
 
         /* Start of the to do list css */
-        #toDoListContainer {
+        #showPetStatus {
           margin:40px;
-        }
-
-        #errorText {
-          color:red;
-          display:none;
         }
   
