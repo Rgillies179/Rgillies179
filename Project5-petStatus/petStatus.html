@@ -47,20 +47,7 @@
        
       //this if statment does not work as it should it only works for 2 of the 5 pets and it does not correctly 
       // see the isTired variable and just spits out the same pets every time
-       play:function () {
-         if (this.isTired == 10) {
-           console.log("Too tired to play.");
-           console.log(this.pet);
-           this.sleep();
-         } else {
-           console.log('Yayyy!', this.name, 'Loves to play!');
-           this.isTired += 1;
-         }
-        },
-         sleep:function () {
-         console.log(this.name, ' needs nap. Zzz...');
-         this.isTired = 1;
-       },
+       
      };
  
      return pet;
@@ -76,6 +63,23 @@
  
     clover.sleep();
     baxter.play();
+
+    function sleep () {
+         console.log(this.name, ' needs nap. Zzz...');
+         this.isTired = 1;
+       }
+
+    function play () {
+         if (this.isTired == 10) {
+           console.log(this.name, "Too tired to play.");
+           this.sleep();
+         } else {
+           console.log('Yayyy!', this.name, 'Loves to play!');
+           this.isTired += 1;
+         }
+        }
+
+
  
  
    </script>
