@@ -41,18 +41,15 @@
  
     const createPet = function (name, species) {
      const pet = {
+      //pets would have id's so i can loop through them
        name: name,
        species: species,
-       isTired: Math.floor(Math.random() * 11), //Scale from  1 - 10
-       
-      //this if statment does not work as it should it only works for 2 of the 5 pets and it does not correctly 
-      // see the isTired variable and just spits out the same pets every time
-       
+       isTired: Math.floor(Math.random() * 11), //Scale from  1 - 10   
      };
  
      return pet;
     };
- 
+
     const sora = createPet("Sora", "ferret");
     const clover = createPet("Clover", "rabbit");
     const baxter = createPet("Baxter", "hamster");
@@ -65,7 +62,7 @@
          console.log(this.name, ' needs nap. Zzz...');
          this.isTired = 1;
        }
-
+       //some sort of for loop that would loop through the id of the pets
     function play () {
          if (this.isTired == 10) {
            console.log(pet.name, "Too tired to play.");
