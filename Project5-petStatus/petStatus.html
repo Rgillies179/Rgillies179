@@ -44,11 +44,9 @@
        name: name,
        species: species,
        isTired: Math.floor(Math.random() * 11), //Scale from  1 - 10
-       sleep:function () {
-         console.log(this.name, ' needs nap. Zzz...');
-         this.isTired = 1;
-       },
        
+      //this if statment does not work as it should it only works for 2 of the 5 pets and it does not correctly 
+      // see the isTired variable and just spits out the same pets every time
        play:function () {
          if (this.isTired == 10) {
            console.log("Too tired to play.");
@@ -58,7 +56,11 @@
            console.log('Yayyy!', this.name, 'Loves to play!');
            this.isTired += 1;
          }
-       }
+        },
+         sleep:function () {
+         console.log(this.name, ' needs nap. Zzz...');
+         this.isTired = 1;
+       },
      };
  
      return pet;
