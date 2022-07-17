@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bin2Dec</title>
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="Bin2dec.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--Navigation bar -->
+  <div id="nav-placeholder"></div>
+
+  <script>
+    //Takes the code from navigation.html and run it here
+    $.get("../navigation.html", function (data) {
+      $("#nav-placeholder").replaceWith(data);
+    });
+
+  </script>
+  <!--end of Navigation bar-->
+  <h1>This is the Page for my Bin2Dec Project.</h1>
+
+  <!--button to refesh the page to allow the user to use the converter again-->
+  <button onClick="window.location.href=window.location.href">Convert Again</button>
+
+  <script>
+    //comment this code
+    var dec = 0;
+    var bin = prompt("Enter one's and zeros to convert from Binary to Decimal")
+    for (var i = 0; i < bin.length; i++) {
+      dec = dec + parseInt(bin[i]) * Math.pow(2, bin.length - 1 - i);
+    }
+    alert(dec)
+
+
+  </script>
+
+</body>
+
+</html>
