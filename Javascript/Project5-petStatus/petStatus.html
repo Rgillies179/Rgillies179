@@ -67,13 +67,13 @@
        
     function play () {
       petArray.forEach(function(name, isTired){
-         if (this.isTired == 10) {
+         if (isTired == 10) {
            console.log(name, "Too tired to play.");
            console.log(petArrayname, ' needs nap. Zzz...');
-           this.isTired = 1;
+           isTired = 1;
          } else {
            console.log('Yayyy!', name, 'Loves to play!'); //find a way to get the pets name with out using a for loop
-           this.isTired += 1;
+           isTired += 1;
          }
         }
       )};
