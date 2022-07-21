@@ -58,8 +58,8 @@
     const cleo = createPet("Cleo", "rat");
     const francine = createPet("francine", "turtle");
 
-    console.log("i am", sora.name)
-    console.log("and i am: ", sora.isTired)
+    console.log("1. i am", sora.name)
+    console.log("1. and i am: ", sora.isTired)
 
     petArray.push('sora', 'clover', 'baxter', 'cleo', 'francine');
  
@@ -67,9 +67,14 @@
 
 
        //find a way to put isTired back to what it should be
-       
+       console.log("i am", sora.name)
+    console.log("and i am: ", sora.isTired)
     function play () {
+      console.log("2. i am", sora.name)
+    console.log("2. and i am: ", sora.isTired)
       petArray.forEach(function(name, isTired){
+        console.log("3. i am", sora.name)
+    console.log("3. and i am: ", sora.isTired)
          if (isTired == 10) {
            console.log(name, "Too tired to play.");
            console.log(name, isTired, ' needs nap. Zzz...');
