@@ -67,6 +67,7 @@
 
 
        //find a way to put isTired back to what it should be
+       //need to pass isTired through the foreach, after name is index so it just showes 0,1,2,3,4
        console.log("i am", sora.name)
     console.log("and i am: ", sora.isTired)
     function play () {
@@ -78,13 +79,13 @@
         console.log("3. i am", sora.name)
        console.log("3. and i am: ", sora.isTired)
 
-         if (name.isTired == 10) {
+         if (petArray[name].isTired == 10) {
            console.log(name, "Too tired to play.");
-           console.log(name, name.isTired, ' needs nap. Zzz...');
-           name.isTired = 1;
+           console.log(name, petArray[name].isTired, ' needs nap. Zzz...');
+           petArray[name].isTired = 1;
          } else {
-           console.log('Yayyy!', name, name.isTired, 'Loves to play!'); 
-           name.isTired += 1;
+           console.log('Yayyy!', name, petArray[name].isTired, 'Loves to play!'); 
+           petArray[name].isTired += 1;
          }
         }
       )};
