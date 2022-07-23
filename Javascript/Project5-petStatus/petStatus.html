@@ -79,13 +79,13 @@
         console.log("3. i am", sora.name)
        console.log("3. and i am: ", sora.isTired)
 
-         if (petArray[name].isTired == 10) {
+         if (petArray.isTired == 10) {
            console.log(name, "Too tired to play.");
-           console.log(name, petArray[name].isTired, ' needs nap. Zzz...');
-           petArray[name].isTired = 1;
+           console.log(name, petArray.isTired, ' needs nap. Zzz...');
+           petArray.isTired = 1;
          } else {
-           console.log('Yayyy!', name, petArray[name].isTired, 'Loves to play!'); 
-           petArray[name].isTired += 1;
+           console.log('Yayyy!', name, petArray.isTired, 'Loves to play!'); 
+           petArray.isTired += 1;
          }
         }
       )};
