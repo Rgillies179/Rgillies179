@@ -70,11 +70,13 @@
        //need to pass isTired through the foreach, after name is index so it just showes 0,1,2,3,4
        console.log("i am", sora.name)
     console.log("and i am: ", sora.isTired)
+
+
     function play () {
       console.log("2. i am", sora.name)
     console.log("2. and i am: ", sora.isTired)
     
-      petArray.forEach(function(name){
+      for(let name in petArray) {
         var tempTired = name;
         console.log("3. i am", sora.name)
        console.log("3. and i am: ", name)
@@ -90,7 +92,7 @@
            name.isTired += 1;
          }
         }
-      )};
+      };
 
 
  
