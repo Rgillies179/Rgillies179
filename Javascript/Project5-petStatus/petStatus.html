@@ -58,65 +58,60 @@
     const cleo = createPet("Cleo", "rat");
     const francine = createPet("francine", "turtle");
 
-    console.log("1. i am", sora.name)
-    console.log("1. and i am: ", sora.isTired)
-
-    petArray.push('sora', 'clover', 'baxter', 'cleo', 'francine');
  
-    console.log(sora, clover, baxter, cleo, francine);
 
 
       function showSora() {
         if (sora.isTired == 10) {
-           console.log(sora, "Too tired to play.");
-           console.log(sora, sora.isTired, ' needs nap. Zzz...');
+           console.log(sora.name, "Too tired to play.");
+           console.log(sora.name, sora.isTired, ' needs nap. Zzz...');
            sora.isTired = 1;
          } else {
-           console.log('Yayyy!', sora, sora.isTired, 'Loves to play!'); 
+           console.log('Yayyy!', sora.name, sora.isTired, 'Loves to play!'); 
            sora.isTired += 1;
          }
       }
 
       function showClover() {
         if (clover.isTired == 10) {
-           console.log(clover, "Too tired to play.");
-           console.log(clover, clover.isTired, ' needs nap. Zzz...');
+           console.log(clover.name, "Too tired to play.");
+           console.log(clover.name, clover.isTired, ' needs nap. Zzz...');
            clover.isTired = 1;
          } else {
-           console.log('Yayyy!', clover, clover.isTired, 'Loves to play!'); 
+           console.log('Yayyy!', clover.name, clover.isTired, 'Loves to play!'); 
            clover.isTired += 1;
          }
       }
 
       function showBaxter() {
         if (baxter.isTired == 10) {
-           console.log(baxter, "Too tired to play.");
-           console.log(baxter, baxter.isTired, ' needs nap. Zzz...');
+           console.log(baxter.name, "Too tired to play.");
+           console.log(baxter.name, baxter.isTired, ' needs nap. Zzz...');
            baxter.isTired = 1;
          } else {
-           console.log('Yayyy!', baxter, baxter.isTired, 'Loves to play!'); 
+           console.log('Yayyy!', baxter.name, baxter.isTired, 'Loves to play!'); 
            baxter.isTired += 1;
          }
       }
 
       function showCleo() {
         if (cleo.isTired == 10) {
-           console.log(cleo, "Too tired to play.");
-           console.log(cleo, cleo.isTired, ' needs nap. Zzz...');
+           console.log(cleo.name, "Too tired to play.");
+           console.log(cleo.name, cleo.isTired, ' needs nap. Zzz...');
            cleo.isTired = 1;
          } else {
-           console.log('Yayyy!', cleo, cleo.isTired, 'Loves to play!'); 
+           console.log('Yayyy!', cleo.name, cleo.isTired, 'Loves to play!'); 
            cleo.isTired += 1;
          }
       }
 
       function showFrancine() {
         if (francine.isTired == 10) {
-           console.log(francine, "Too tired to play.");
-           console.log(francine, francine.isTired, ' needs nap. Zzz...');
+           console.log(francine.name, "Too tired to play.");
+           console.log(francine.name, francine.isTired, ' needs nap. Zzz...');
            francine.isTired = 1;
          } else {
-           console.log('Yayyy!', francine, baxter.isTired, 'Loves to play!'); 
+           console.log('Yayyy!', francine.name, baxter.isTired, 'Loves to play!'); 
            francine.isTired += 1;
          }
       }
