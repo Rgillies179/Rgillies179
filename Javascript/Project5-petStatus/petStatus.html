@@ -66,47 +66,89 @@
     console.log(sora, clover, baxter, cleo, francine);
 
 
-       //find a way to put isTired back to what it should be
-       //need to pass isTired through the foreach, after name is index so it just showes 0,1,2,3,4
-       console.log("i am", sora.name)
-    console.log("and i am: ", sora.isTired)
-
-
-    function play () {
-      console.log("2. i am", sora.name)
-    console.log("2. and i am: ", sora.isTired)
-    
-      petArray.forEach(function(name){
-        petArray.forEach(function(isTired){
-        var tempTired = name;
-        console.log("3. i am", sora.name)
-       console.log("3. and i am: ", name)
-       console.log("3. and i am the: ", cleo.isTired )
-       console.log("3. and i am the temp: ", tempTired)
-       console.log("3. and i am the temp of the: ", tempTired.isTired)
-
-         if (name.isTired == 10) {
-           console.log(name, "Too tired to play.");
-           console.log(name, name.isTired, ' needs nap. Zzz...');
-           name.isTired = 1;
+      function showSora() {
+        if (sora.isTired == 10) {
+           console.log(sora, "Too tired to play.");
+           console.log(sora, sora.isTired, ' needs nap. Zzz...');
+           sora.isTired = 1;
          } else {
-           console.log('Yayyy!', name, name.isTired, 'Loves to play!'); 
-           name.isTired += 1;
+           console.log('Yayyy!', sora, sora.isTired, 'Loves to play!'); 
+           sora.isTired += 1;
          }
-        }
-      )})};
+      }
 
+      function showClover() {
+        if (clover.isTired == 10) {
+           console.log(clover, "Too tired to play.");
+           console.log(clover, clover.isTired, ' needs nap. Zzz...');
+           clover.isTired = 1;
+         } else {
+           console.log('Yayyy!', clover, clover.isTired, 'Loves to play!'); 
+           clover.isTired += 1;
+         }
+      }
 
- 
- 
+      function showBaxter() {
+        if (baxter.isTired == 10) {
+           console.log(baxter, "Too tired to play.");
+           console.log(baxter, baxter.isTired, ' needs nap. Zzz...');
+           baxter.isTired = 1;
+         } else {
+           console.log('Yayyy!', baxter, baxter.isTired, 'Loves to play!'); 
+           baxter.isTired += 1;
+         }
+      }
+
+      function showCleo() {
+        if (cleo.isTired == 10) {
+           console.log(cleo, "Too tired to play.");
+           console.log(cleo, cleo.isTired, ' needs nap. Zzz...');
+           cleo.isTired = 1;
+         } else {
+           console.log('Yayyy!', cleo, cleo.isTired, 'Loves to play!'); 
+           cleo.isTired += 1;
+         }
+      }
+
+      function showFrancine() {
+        if (francine.isTired == 10) {
+           console.log(francine, "Too tired to play.");
+           console.log(francine, francine.isTired, ' needs nap. Zzz...');
+           francine.isTired = 1;
+         } else {
+           console.log('Yayyy!', francine, baxter.isTired, 'Loves to play!'); 
+           francine.isTired += 1;
+         }
+      }
    </script>
 
-<!-- text, input and button for the to do list -->
+<!-- text, input and button for the show pet status -->
 <div id="showPetStatusContainer">
 
   <img class="catImage" style="height: 200px;" src="https://live.staticflickr.com/7162/6436111935_edbbd3f400_b.jpg" />
 
-  <button id="showPetStatus" onclick="play();"> Show Pet Status </button>
+  <button id="showPetStatus" onclick="showSora();"> Show Sora Status </button>
+
+  <img class="catImage" style="height: 200px;" src="https://live.staticflickr.com/7162/6436111935_edbbd3f400_b.jpg" />
+
+  <button id="showPetStatus" onclick="showClover();"> Show Clover Status </button>
+
+  
+  <img class="catImage" style="height: 200px;" src="https://live.staticflickr.com/7162/6436111935_edbbd3f400_b.jpg" />
+
+  <button id="showPetStatus" onclick="showBaxter();"> Show Baxter Status </button>
+
+
+  <img class="catImage" style="height: 200px;" src="https://live.staticflickr.com/7162/6436111935_edbbd3f400_b.jpg" />
+
+  <button id="showPetStatus" onclick="showCleo();"> Show Cleo Status </button>
+
+
+  <img class="catImage" style="height: 200px;" src="https://live.staticflickr.com/7162/6436111935_edbbd3f400_b.jpg" />
+
+  <button id="showPetStatus" onclick="showFrancine();"> Show Francine Status </button>
+
+
 
 </div>
 
